@@ -1,0 +1,12 @@
+desirecaps:
+  platformName: "android"
+  deviceName: "SJE0217909002069"
+  appPackage: "com.xueqiu.android"
+  appActivity: ".view.WelcomeActivityAlias"
+  noReset: "true"
+  skipServerInstallation: 'true'
+  skipDeviceInitialization: 'true'
+
+server:
+  ip: 127.0.0.1
+  port: 4723

@@ -1,10 +1,9 @@
-
-#启动app,停止app,重启app
+#-*-coding:utf-8-*-
 import yaml
 from appium import webdriver
 
-from apptest.apppo.page.base_page import BasePage
-from apptest.apppo.page.mian_page import MainPage
+from UIframework.page.basepage import BasePage
+from UIframework.page.main_page import MainPage
 
 with open("../datas/caps.yaml") as f:
     datas = yaml.safe_load(f)
@@ -15,10 +14,9 @@ class App(BasePage):
     def start(self):
         if self.driver == None:
 
-            # 启动app
+
 
             # caps['settings[waitForIdleTimeout]'] = 1
-            # 客户端与appium 服务器建立连接的代码
             self.driver = webdriver.Remote(f"http://{ip}:{port}/wd/hub", desires)
             self.driver.implicitly_wait(5)
         else:
@@ -26,13 +24,13 @@ class App(BasePage):
         return self
 
     def restart(self):
-        # 重启app
+        # 开启app
         self.driver.close_app()
         self.driver.launch_app()
 
 
     def stop(self):
-        # 停止app
+        # 关闭app
         self.driver.quit()
 
     def goto_main(self):
