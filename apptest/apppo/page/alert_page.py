@@ -5,5 +5,5 @@ from apptest.apppo.page.search_page import SearchContactPage
 
 class AlertPage():
     def alertpage(self):
-        self.find_and_click(MobileBy.XPATH, "//*[@text='确定']")
+        self.find_and_click(MobileBy.XPATH, "//*[@text='纭畾']")
         return SearchContactPage()

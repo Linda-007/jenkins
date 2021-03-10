@@ -1,5 +1,5 @@
-2021-03-10 09:23:18,368 - C:\Users\fulinxin\ceshiren实战项目\apphomework\apppo\test_yaml.py[line:16] - INFO: test_yaml
-2021-03-10 09:23:18,370 - C:\Users\fulinxin\ceshiren实战项目\apphomework\apppo\test_yaml.py[line:24] - INFO: desirecaps:
+2021-03-10 11:03:37,375 - C:\Users\fulinxin\ceshiren实战项目\apptest\apppo\testcase\test_yaml.py[line:15] - INFO: test_yaml
+2021-03-10 11:03:37,378 - C:\Users\fulinxin\ceshiren实战项目\apptest\apppo\testcase\test_yaml.py[line:23] - INFO: desirecaps:
   appActivity: .launch.LaunchSplashActivity
   appPackage: com.tencent.wework
   deviceName: SJE0217909002069

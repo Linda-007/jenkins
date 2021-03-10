@@ -6,7 +6,7 @@ from apptest.apppo.page.personinfo_page import PersonInfoPage
 
 class PersonHomePage(BasePage):
     def click_personhome(self):
-        #点击个人主页右侧三个小圆点
+        #鐐瑰嚮涓汉涓婚〉鍙充晶涓変釜灏忓渾鐐�
         self.find_and_click(MobileBy.ID, "com.tencent.wework:id/iga")
 
         return PersonInfoPage()

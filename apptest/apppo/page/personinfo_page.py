@@ -6,7 +6,7 @@ from apptest.apppo.page.editperson_page import EditPersonPage
 
 class PersonInfoPage(BasePage):
     def edit_person(self):
-        #点击编辑成员
-        self.find_and_click(MobileBy.XPATH, "//*[@text='编辑成员']")
+        #鐐瑰嚮缂栬緫鎴愬憳
+        self.find_and_click(MobileBy.XPATH, "//*[@text='缂栬緫鎴愬憳']")
 
         return  EditPersonPage()

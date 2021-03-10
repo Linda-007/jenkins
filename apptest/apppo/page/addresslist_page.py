@@ -8,6 +8,6 @@ from apptest.apppo.page.base_page import BasePage
 class AddressListPage(BasePage):
 
     def click_addcontact(self):
-        elelemt = self.swipe_find("添加成员")
+        elelemt = self.swipe_find("娣诲姞鎴愬憳")
         elelemt.click()
         return AddContactPage(self.driver)

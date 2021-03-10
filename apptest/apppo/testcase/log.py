@@ -32,16 +32,16 @@ class Logger(object):
         self.logger.addHandler(sh) #把对象加到logger里
         self.logger.addHandler(th)
 
-def test_yaml():
-    logging.info("test_yaml")
-
-    pythonobj = {
-        'desirecaps': {'platformName': 'android', 'deviceName': 'emulator-5554', 'appPackage': 'com.tencent.wework',
-                       'appActivity': '.launch.LaunchSplashActivity', 'noReset': 'true',
-                       'skipServerInstallation': 'true',
-                       'skipDeviceInitialization': 'true'}, 'server': {'ip': '127.0.0.1', 'port': 4723}}
-    print(yaml.safe_dump(pythonobj))
-    logging.info(yaml.safe_dump(pythonobj))
+# def test_yaml():
+#     logging.info("test_yaml")
+#
+#     pythonobj = {
+#         'desirecaps': {'platformName': 'android', 'deviceName': 'emulator-5554', 'appPackage': 'com.tencent.wework',
+#                        'appActivity': '.launch.LaunchSplashActivity', 'noReset': 'true',
+#                        'skipServerInstallation': 'true',
+#                        'skipDeviceInitialization': 'true'}, 'server': {'ip': '127.0.0.1', 'port': 4723}}
+#     print(yaml.safe_dump(pythonobj))
+#     logging.info(yaml.safe_dump(pythonobj))
 if __name__ == '__main__':
     # log = Logger('all.log',level='debug')
     # log.logger.debug('debug')

@@ -7,12 +7,12 @@ from apptest.apppo.page.personhome_page import PersonHomePage
 class SearchContactPage(BasePage):
     name = "RT"
     def search_contact(self,name):
-        self.find(MobileBy.XPATaH, '//*[@text="搜索"]').send_keys("name")
+        self.find(MobileBy.XPATaH, '//*[@text="鎼滅储"]').send_keys("name")
         elelist = self.find(MobileBy.XPATaH, '//*[@text="RT"]')
-        # find_elements 方法返回的是一个列表[element1,element2...]
+        # find_elements 鏂规硶杩斿洖鐨勬槸涓�涓垪琛╗element1,element2...]
         if len(elelist) > 1:
             elelist[1].click()
         else:
-            print("无搜索结果")
+            print("鏃犳悳绱㈢粨鏋�")
         return PersonHomePage()
 

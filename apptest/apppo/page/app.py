@@ -1,5 +1,5 @@
 
-#启动app,停止app,重启app
+#鍚姩app,鍋滄app,閲嶅惎app
 import yaml
 from appium import webdriver
 
@@ -15,10 +15,10 @@ class App(BasePage):
     def start(self):
         if self.driver == None:
 
-            # 启动app
+            # 鍚姩app
 
             # caps['settings[waitForIdleTimeout]'] = 1
-            # 客户端与appium 服务器建立连接的代码
+            # 瀹㈡埛绔笌appium 鏈嶅姟鍣ㄥ缓绔嬭繛鎺ョ殑浠ｇ爜
             self.driver = webdriver.Remote(f"http://{ip}:{port}/wd/hub", desires)
             self.driver.implicitly_wait(5)
         else:
@@ -26,13 +26,13 @@ class App(BasePage):
         return self
 
     def restart(self):
-        # 重启app
+        # 閲嶅惎app
         self.driver.close_app()
         self.driver.launch_app()
 
 
     def stop(self):
-        # 停止app
+        # 鍋滄app
         self.driver.quit()
 
     def goto_main(self):
