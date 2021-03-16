@@ -13,9 +13,6 @@ with open("../datas/caps.yaml") as f:
 class App(BasePage):
     def start(self):
         if self.driver == None:
-
-
-
             # caps['settings[waitForIdleTimeout]'] = 1
             self.driver = webdriver.Remote(f"http://{ip}:{port}/wd/hub", desires)
             self.driver.implicitly_wait(5)
