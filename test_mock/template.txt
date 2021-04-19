@@ -1,0 +1,7 @@
+import requests
+def request_demo():
+    url=""
+    res=requests.request(method="{method}",url="{url}")
+
+    if __name__ == '__main__':
+        request_demo()
